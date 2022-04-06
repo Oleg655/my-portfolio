@@ -1,0 +1,14 @@
+@import '../common/styles/sass/Variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+.navbar {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    .navbar a {
+        @include text($navbarFontFamily, 21px, 300);
+        text-decoration: none;
+
+    }
+}
+

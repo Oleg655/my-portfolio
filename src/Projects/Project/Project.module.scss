@@ -1,0 +1,63 @@
+@import '../../common/styles/sass/Variables';
+@import '../../common/styles/sass/mixins';
+
+.project {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: $bgSecondColor;
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        background-color: #827a83;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: #212529;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.4;
+        }
+        .btn {
+            padding: 10px 15px;
+            background-color: $bgDescriptionColor;
+            @include text($fontFamily, 18px, 500);
+            position: relative;
+            z-index: 1;
+        }
+
+    }
+    .info {
+        padding: 25px 20px;
+        background-color: $bgDescriptionColor;
+        .title {
+            @include text($fontFamily, 21px, 500);
+            margin: 0px;
+        }
+        .description {
+            @include text($fontFamily, 12px, 500);
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+@import '../common/styles/sass/Variables';
+
+.footerBlock {
+    background-color: $bgColor;
+    .footerContainer {
+        align-items: center;
+        flex-direction: column;
+        .iconBlock {
+            margin: 20px;
+            border: 1px solid;
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            .icon {
+                height: 60px;
+                width: 60px;
+                background-color: #827a83;
+            }
+        }
+    }
+}
+
+
+
+
+

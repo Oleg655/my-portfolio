@@ -1,0 +1,43 @@
+@import '../common/styles/sass/Variables';
+@import '../common/styles/sass/mixins';
+
+.mainBlock {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $bgColor;
+
+  .greeting {
+    width: 300px;
+
+    .description {
+      @include text($fontFamily, 21px, 500);
+      letter-spacing: 1px;
+      line-height: 1.5;
+    }
+
+    h1 {
+      color: $textColor;
+    }
+
+    p {
+      color: $textColor;
+    }
+  }
+
+  .photo {
+    width: 300px;
+    height: 400px;
+    background-color: $bgDescriptionColor;
+
+  }
+
+}
+
+
+
+
+
+
+
+
